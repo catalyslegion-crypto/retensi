@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Store Online</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🛒 Gift Hub</h2>
+  <a href="#">Dashboard</a>
+  <a href="#produk">Produk</a>
+  <a href="#pesanan">Pesanan</a>
+</div>
+
+<div class="main">
+  <h1>Dashboard Store Online</h1>
+
+  <!-- Statistik -->
+  <div class="cards">
+    <div class="card">
+      <h3>Total Produk</h3>
+      <p id="totalProduk">0</p>
+    </div>
+    <div class="card">
+      <h3>Total Pesanan</h3>
+      <p id="totalPesanan">0</p>
+    </div>
+  </div>
+
+  <!-- Tabel Produk -->
+  <h2 id="produk">Daftar Produk</h2>
+  <table>
+    <tr>
+      <th>Nama</th>
+      <th>Harga</th>
+      <th>Stok</th>
+    </tr>
+    <tbody id="produkTable"></tbody>
+  </table>
+
+  <!-- Tabel Pesanan -->
+  <h2 id="pesanan">Daftar Pesanan</h2>
+  <table>
+    <tr>
+      <th>Customer</th>
+      <th>Produk</th>
+      <th>Status</th>
+    </tr>
+    <tbody id="pesananTable"></tbody>
+  </table>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
